@@ -1,9 +1,14 @@
 This project includes a collection of Python scripts to download Purple Air
 air quality (particulate matter) data from the thingspeak.com API for a set of sensors that are
 within a specified geographic region (minimum/maximum latitude/longitude). 
+
 The scripts include methods to download data from the thingspeak API, merge 
 and augment the data and then perform various spatial and temporal analyses 
-along with visualizations to be able to comprehend air quality across space and time.  
+along with visualizations to be able to comprehend air quality across space and time.
+
+The scripts build a table of all the registered PA sensors on the network
+in a sqlite database then use that table as a source for the sensors of
+interest, where they are and when they last reported.  
 
 For now, this repository includes only the download scripts as I am still
 working on the analytic elements.    
